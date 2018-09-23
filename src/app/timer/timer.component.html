@@ -1,0 +1,19 @@
+<p>Count: {{counter}}</p>
+
+
+  <div *ngIf="inBreak" class="alert alert-info  fade show" role="alert">{{breakMessage}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="jumbotron text-center">
+    <h1>{{display}}</h1>
+  </div>
+  <div class="text-center">
+    <button [disabled]="isRunning" type="button" class="btn btn-success" (click)="startTimer()">Start
+    </button>
+    <button type="button" class="btn btn-danger" (click)="pauseTimer()">pause</button>
+    <button type="button" class="btn btn-warning" (click)="resetTimer()">Reset</button>
+  </div>
+
