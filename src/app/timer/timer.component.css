@@ -1,1 +1,33 @@
+button {
+  cursor: pointer;
+  border-radius: 21px;
+  box-shadow: 1px 3px 5px black;
+}
 
+.start {
+  background-color: #9dbf9e;
+}
+
+.pause {
+  background-color: #ee7674;
+}
+
+.reset {
+  background-color: #bda5b0;
+}
+
+.jumbotron {
+  padding: 4rem 2rem;
+  box-shadow: 1px;
+  box-shadow: -1px 3px 14px 0px black;
+  border-radius: 63px;
+  background-color: #e9b5ac;
+}
+
+.count {
+  background-color: #9dbf9e;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 10px;
+}
