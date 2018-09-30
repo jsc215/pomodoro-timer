@@ -69,6 +69,11 @@ export class TimerComponent implements OnInit {
     console.log('counter', this.counter);
   }
 
+  playAlarm() {
+    const sound = new Audio('assets/tick.mp3');
+    sound.play();
+  }
+
   pauseTimer() {
     clearInterval(this.countdown);
     this.isPaused = true;
@@ -85,9 +90,11 @@ export class TimerComponent implements OnInit {
     this.countdown = setInterval(() => {
       this.secondsLeft = Math.round((then - Date.now()) / 1000);
       if (this.secondsLeft < 0) {
+        this.playAlarm();
         clearInterval(this.countdown);
         this.counter++;
         if (this.counter % 2 === 1 && this.counter < 9) {
+          this.playAlarm();
           this.startShortBreak();
         } else if (this.counter % 2 === 1 && this.counter === 9) {
           this.startLongBreak();
