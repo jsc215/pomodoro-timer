@@ -8,12 +8,15 @@
   </button>
 </div>
 
-<div class="jumbotron text-center">
-  <h1>{{display}}</h1>
+<div class="pomodoro">
+  <div class="display">
+    <h2>{{display}}</h2>
+  </div>
 </div>
-<div class="text-center">
-  <button [disabled]="isRunning" type="button" class="btn start" (click)="startTimer()">Start
-  </button>
-  <button type="button" class="btn pause" (click)="pauseTimer()">pause</button>
-  <button type="button" class="btn reset" (click)="resetTimer()">Reset</button>
-</div>
+  <div class="text-center">
+    <button [disabled]="isRunning" type="button" class="btn start" (click)="startTimer()">Start
+    </button>
+    <button type="button" class="btn pause" (click)="pauseTimer()">pause</button>
+    <button type="button" class="btn reset" (click)="resetTimer()">Reset</button>
+  </div>
+  

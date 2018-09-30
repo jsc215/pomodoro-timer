@@ -16,18 +16,25 @@ button {
   background-color: #bda5b0;
 }
 
-.jumbotron {
-  padding: 4rem 2rem;
-  box-shadow: 1px;
-  box-shadow: -1px 3px 14px 0px black;
-  border-radius: 63px;
-  background-color: #e9b5ac;
+.pomodoro {
+  display: flex;
+  justify-content: center; 
+  flex-direction: row;
+  background: url(/assets/pomodoro.png) no-repeat center center;
+  min-height: 190%;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .count {
-  background-color: #9dbf9e;
+  background-color: #c8e7c9;
   text-align: center;
   font-size: 1em;
   border-radius: 10px;
   padding: 10px;
+}
+
+.display {
+margin-top: 95px;
+margin-bottom: -80px;
 }
