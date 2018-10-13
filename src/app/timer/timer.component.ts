@@ -16,9 +16,9 @@ export class TimerComponent implements OnInit {
   7. start new sequence functionality -- use sequence counter for this
   */
 
-  initialTime = 1500;
-  shortBreak = 300;
-  longBreak = 900;
+  initialTime = 5;
+  shortBreak = 3;
+  longBreak = 4;
   breakMessage = 'Take a break';
   hasStarted = false;
   isRunning = false;
@@ -27,6 +27,8 @@ export class TimerComponent implements OnInit {
   display: string;
   secondsLeft: number;
   counter = 0;
+  icon = [];
+
   inBreak: boolean;
 
   constructor() {}
@@ -40,6 +42,7 @@ export class TimerComponent implements OnInit {
     this.hasStarted = false;
     this.counter = 0;
     this.isRunning = false;
+    this.icon = [];
     clearInterval(this.countdown);
   }
 
@@ -93,6 +96,9 @@ export class TimerComponent implements OnInit {
         this.playAlarm();
         clearInterval(this.countdown);
         this.counter++;
+        if (this.counter % 2 === 1) {
+          this.icon.push(true);
+        }
         if (this.counter % 2 === 1 && this.counter < 9) {
           this.playAlarm();
           this.startShortBreak();

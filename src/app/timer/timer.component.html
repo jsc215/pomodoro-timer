@@ -1,22 +1,15 @@
-<div class="row d-flex justify-content-center">
-  <p class=" col-3 count">Count: {{counter}}</p>
+<div class="row">
+  <div class="col-sm-6 float-left m-0">
+    <i *ngFor="let t of icon" class="fas fa-pen-fancy fa-lg"></i>
+  </div>
 </div>
-
-<div *ngIf="inBreak" class="alert alert-info  fade show" role="alert">{{breakMessage}}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
 <div class="pomodoro">
-  <div class="display">
-    <h2>{{display}}</h2>
-  </div>
+    <h2>{{display}}</h2>
 </div>
-  <div class="text-center">
-    <button [disabled]="isRunning" type="button" class="btn start" (click)="startTimer()">Start
-    </button>
-    <button type="button" class="btn pause" (click)="pauseTimer()">pause</button>
-    <button type="button" class="btn reset" (click)="resetTimer()">Reset</button>
-  </div>
-  
+<br>
+<div class="text-center">
+  <button [disabled]="isRunning" type="button" class="btn start" (click)="startTimer()">Start
+  </button>
+  <button type="button" class="btn pause" (click)="pauseTimer()">pause</button>
+  <button type="button" class="btn reset" (click)="resetTimer()">Reset</button>
+</div>

@@ -21,20 +21,13 @@ button {
   justify-content: center; 
   flex-direction: row;
   background: url(/assets/pomodoro.png) no-repeat center center;
-  min-height: 190%;
+  min-height: 200%;
   margin-right: -15px;
   margin-left: -15px;
 }
-
-.count {
-  background-color: #c8e7c9;
+h2 {
   text-align: center;
-  font-size: 1em;
-  border-radius: 10px;
-  padding: 10px;
+  align-self: center;
+  height: 100px;
 }
 
-.display {
-margin-top: 95px;
-margin-bottom: -80px;
-}
