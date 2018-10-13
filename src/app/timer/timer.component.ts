@@ -16,9 +16,9 @@ export class TimerComponent implements OnInit {
   7. start new sequence functionality -- use sequence counter for this
   */
 
-  initialTime = 5;
-  shortBreak = 3;
-  longBreak = 4;
+  initialTime = 1500;
+  shortBreak = 300;
+  longBreak = 900;
   breakMessage = 'Take a break';
   hasStarted = false;
   isRunning = false;
